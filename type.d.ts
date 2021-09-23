@@ -1,21 +1,26 @@
-type StudentStatus = 'join' | 'dropout';
+export type StudentStatus = 'join' | 'dropout';
 
+/** @deprecated */
 export interface Record<T, D = {}> {
   type: T,
   data?: D,
   date: Date,
 }
 
+/** @deprecated */
 export type StudentRollCall = Record<'rollcall'>
 
+/** @deprecated */
 export type StudentDeposit = Record<'deposit', {
   name: string,
   money: number,
   times: number,
 }>
 
+/** @deprecated */
 export type StudentRecord = (StudentDeposit | StudentRollCall)[];
 
+/** @deprecated */
 export interface GetStudentInfoRes {
   name: string,
   status: StudentStatus,
@@ -25,6 +30,7 @@ export interface GetStudentInfoRes {
   records: StudentRecord
 }
 
+/** @deprecated */
 interface RollCallReq {
   date: Date,
   studentIdList: number[]
