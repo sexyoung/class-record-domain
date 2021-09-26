@@ -4,5 +4,5 @@ export interface Deposit {
 }
 
 export interface Postpone {
-  date: Date
+  day: number
 }
