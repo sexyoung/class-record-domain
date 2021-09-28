@@ -1,13 +1,5 @@
 import { StudentStatus } from "../../type";
 
-export enum Query {
-  Join = 'join',
-  Dropout = 'dropout',
-  Current = 'current',
-  Zero = 'zero',
-  Debts = 'debts',
-}
-
 export interface IRecord<T, D = {}> {
   type: T;
   data?: D;
