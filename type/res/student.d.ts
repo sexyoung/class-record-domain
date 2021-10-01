@@ -1,4 +1,4 @@
-import { StudentStatus } from "domain/type";
+import { StudentStatus } from domain/type;
 
 export interface Student {
   id: number;
@@ -6,5 +6,12 @@ export interface Student {
   status: StudentStatus;
   lineId: string;
   picture: string;
+}
+
+export interface OneStudent {
+  name: string;
+  status: string;
+  picture: string | null;
+  records: Array;
 }
 
