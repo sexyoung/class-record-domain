@@ -6,6 +6,6 @@ interface Student {
 
 export interface Class {
   id: number;
-  date: Date;
+  date: string;
   students: Student[];
 }
