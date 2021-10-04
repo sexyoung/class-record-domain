@@ -1,4 +1,5 @@
 export interface Plan {
+  id: number;
   teacherId: number;
   name: string;
   money: number;
