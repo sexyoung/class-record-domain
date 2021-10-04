@@ -9,6 +9,7 @@ export interface Student {
 }
 
 export interface IRecord<T, D = {}> {
+  id: number;
   type: T;
   data?: D;
   date: Date;
@@ -20,6 +21,7 @@ export type Deposit = IRecord<'deposit', {
   name: string;
   money: number;
   times: number;
+  expiresAt: string;
 }>
 
 export type Record = (Deposit | RollCall)[];
