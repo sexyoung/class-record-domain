@@ -1,4 +1,4 @@
-import { StudentStatus } from domain/type;
+import { StudentStatus } from '../../type';
 
 export interface Student {
   id: number;
@@ -8,10 +8,27 @@ export interface Student {
   picture: string;
 }
 
-export interface OneStudent {
-  name: string;
-  status: string;
-  picture: string | null;
-  records: Array;
+export interface IRecord<T, D = {}> {
+  type: T;
+  data?: D;
+  date: Date;
 }
 
+export type RollCall = IRecord<'rollcall'>
+
+export type Deposit = IRecord<'deposit', {
+  name: string;
+  money: number;
+  times: number;
+}>
+
+export type Record = (Deposit | RollCall)[];
+
+export interface Detail {
+  name: string;
+  status: StudentStatus;
+  picture: string;
+  createdAt: Date;
+  updatedAt: Date;
+  records: Record;
+}
