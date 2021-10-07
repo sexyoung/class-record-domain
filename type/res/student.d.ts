@@ -26,10 +26,7 @@ export type Deposit = IRecord<'deposit', {
 
 export type Record = (Deposit | RollCall)[];
 
-export interface Detail {
-  name: string;
-  status: StudentStatus;
-  picture: string;
+export interface Detail extends Student {
   createdAt: Date;
   updatedAt: Date;
   records: Record;
