@@ -1,9 +1,9 @@
-import { StudentStatus } from '../../type';
+import * as Type from '../../type';
 
 export interface Student {
   id: number;
   name: string;
-  status: StudentStatus;
+  status: Type.StudentStatus;
   lineId: string;
   picture: string;
 }
@@ -30,4 +30,9 @@ export interface Detail extends Student {
   createdAt: Date;
   updatedAt: Date;
   records: Record;
+}
+
+export type StudentQuery = Student & {
+  deposits: (Type.Deposit & {plan: Type.Plan})[];
+  rollcalls: Type.RollCall[];
 }

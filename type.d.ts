@@ -19,3 +19,20 @@ export interface Student {
   lineId: string,
   picture: string,
 }
+
+export interface RollCall {
+  id: number,
+  createdAt: string,
+}
+
+export interface Deposit {
+  id: number,
+  planId: number,
+  createdAt: string,
+  expiresAt: string,
+}
+
+export interface Plan {
+  id: number,
+  times: number,
+}
