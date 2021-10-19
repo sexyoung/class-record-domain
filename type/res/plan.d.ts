@@ -7,3 +7,9 @@ export interface Plan {
   expiresDays: number;
   isActive: boolean;
 }
+
+export interface IPlanData {
+  money: number,
+  times: number,
+  expiresDays: number,
+}
