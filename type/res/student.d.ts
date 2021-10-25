@@ -3,9 +3,12 @@ import * as Type from '../../type';
 export interface Student {
   id: number;
   name: string;
-  status: Type.StudentStatus;
   lineId: string;
   picture: string;
+  expiresAt?: Date;
+  planTimes?: number;
+  rollcalls?: number;
+  status: Type.StudentStatus;
 }
 
 export interface IRecord<T, D = {}> {
