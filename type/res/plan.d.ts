@@ -9,8 +9,8 @@ export interface Plan {
 }
 
 export interface IPlanData {
-  id: number,
-  setId: () => void,
+  id?: number,
+  name: string,
   money: number,
   times: number,
   expiresDays: number,
