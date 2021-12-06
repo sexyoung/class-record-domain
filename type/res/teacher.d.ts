@@ -7,7 +7,7 @@ export interface Teacher {
   note: string|null;
 }
 
-export interface Detail extends Student {
+export interface Detail extends Teacher {
   emailVerifiedAt: Date;
   createdAt: Date;
   updatedAt: Date;
