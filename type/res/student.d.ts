@@ -5,8 +5,9 @@ export interface Student {
   name: string;
   lineId: string;
   picture: string;
+  times: number;
   expiresAt?: string;
-  planTimes?: number;
+  planTimes: number;
   rollcalls?: number;
   status: Type.StudentStatus;
 }

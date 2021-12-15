@@ -9,9 +9,9 @@ export interface Plan {
 
 export interface Student {
   name: string;
-  status: StudentStatus;
   plan: string;
   depositDay: string;
+  status: StudentStatus;
 }
 
 export interface RollCall {
