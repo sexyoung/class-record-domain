@@ -3,6 +3,7 @@ export interface Teacher {
   name: string;
   email: string;
   token: string;
+  picture: string;
   password: string;
   note: string|null;
 }
