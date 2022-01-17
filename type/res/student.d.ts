@@ -4,6 +4,8 @@ export interface Student {
   id: number;
   name: string;
   lineId: string;
+  phone: string;
+  email: string;
   picture: string;
   times: number;
   expiresAt?: string;
